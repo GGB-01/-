@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+     div{
+        width: 64%;
+        margin: 0 auto;
+    }
+   </style>
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- 
+    form表单属性
+        1.action:表单提交的url，往何处提交数据，如果不指定，默认提交到当前页面
+        2.method:表单的提交方法
+            (默认)get:在url的后面拼接表单数据，比如 ?username=ggb&age=20，url的长度有限制
+            post:在消息体(请求体)中传递的，参数无大小限制
+    -->
+            <div>
+                <form action="" method="post">
+                    用户名：<input type="text" name="username">
+                    <br>
+                    密码：<input type="password" name="password">
+                    <br>
+                    日期时间：<input type="datetime-local" name="datetime">
+                    <br>
+                    时间：<input type="time" name="time">
+                    <br>
+                    生日：<input type="date" name="birthday">
+                    <br>
+                    邮件：<input type="email" name="email">
+                    <br>
+                    <!-- 单选按钮 -->
+                    性别：<label><input type="radio" name="gender" value="1">男</label>
+                          <label><input type="radio" name="gender" value="2">女</label>
+                    <br>
+                    <!-- 复选框 -->
+                    爱好：<label><input type="checkbox" name="hobby" value="java">java </label>
+                          <label><input type="checkbox" name="hobby" value="python">python </label>
+                          <label><input type="checkbox" name="hobby" value="c++">c++ </label>
+                    <br>
+                    <!-- 文件上传按 -->
+                    上传图片：<input type="file" name="image">
+                    <br>
+                    <!-- 数字输入框 -->
+                    年龄：<input type="number" name="age">
+                    <br>
+                    <!-- 下拉列表 -->
+                     学历：<select name="degree">
+                        <option value="">----------请选择----------</option>
+                        <option value="1">大专</option>
+                        <option value="2">本科</option>
+                        <option value="3">硕士</option>
+                     </select>
+                     <br>
+                    描述：<textarea name="description" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="reset" value="重置">
+                    <input type="submit" value="提交">
+                    <input type="button" value="按钮">
+                </form>
+            </div>
+</body>
+</html>
