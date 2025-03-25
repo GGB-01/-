@@ -46,6 +46,60 @@
        }
 
 ~~~~
+#### 四，数据类型
+![alt text](../图片/Day2_8.png)
+#### 五，运算符
+![alt text](../图片/Day2_9.png)
+![alt text](../图片/Day2_10.png)
+~~~~
+        alert(parseInt("12"));//12
+        alert(parseInt("12A12"));//12
+        alert(parseInt("AAA"));//NaN
+~~~~
+        if(0){
+            alert("0转换为false");
+        }
+        if(NaN){
+            alert("NaN转换为false");
+        }
+        if(-1){
+            alert("除0和NaN其它数字转换为true");
+        }
+~~~~
+        if(""){
+            alert("空字符串为false,其它都是true");
+        }
+         if(null){
+            alert("null转化为false");
+        }
+        if(undefined){
+            alert("undefined转化为false");
+        }
+~~~~
+#### 六，流程控制
+![alt text](../图片/Day2_11.png)
+## 4.js函数
+![alt text](../图片/Day2_12.png)
+~~~~
+        function add(a,b){
+            return a+b;
+        }
+
+        var x=add(520,1314);
+        alert(x);
+~~~~
+![alt text](../图片/Day2_13.png)
+~~~~
+        var product=function(a,b){
+            return a*b;
+        }
+        alert(product(2,3));
+~~~~
+##
+
+
+
+
 
 
 
