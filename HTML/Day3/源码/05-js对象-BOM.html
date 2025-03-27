@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //confrim对话框
+        var flag=window.confirm("确认删除该记录吗");
+        alert(flag);
+        //确定为true,取消为false
+
+        //定时器——setInterval--周期性的执行某一个函数
+        var i=0;
+        setInterval(function(){
+            i++;
+            console.log("定时器执行了"+i+"次");   
+        },2000)//每两秒执行一次
+
+        //定时器-setTimeout--延迟执行一次
+        setTimeout(function(){
+            alert("延迟执行了一次");
+        },3000)//延迟3秒
+
+        //location
+        alert(location.href);//获取浏览器地址
+        location.href="https://www.yuanshen.com/";
+        //修改浏览器域名后跳转
+
+    </script>
+</body>
+</html>

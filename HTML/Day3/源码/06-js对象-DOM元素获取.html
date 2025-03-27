@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="h1" src="../图片/13.png"> <br><br>
+    <div class="cls">程序员</div> <br>
+    <div class="cls">GGB</div> <br>
+    <input type="checkbox" name="hobby">电影
+    <input type="checkbox" name="hobby">旅游
+    <input type="checkbox" name="hobby">游戏
+</body>
+
+<script>
+//1.获取Element元素
+//1.1 获取元素-根据id获取
+  var imag=document.getElementById("h1");
+  alert(imag);
+
+//1.2 获取元素-根据标签获取
+var divs=document.getElementsByTagName('div');
+for (let i = 0; i < divs.length; i++) {
+    alert(divs[i]);
+}
+
+//1.3 获取元素-根据name属性获取
+var ins=document.getElementsByName('hobby');
+for (let i = 0; i < ins.length; i++) {
+    alert(ins[i]);
+}
+
+//1.4 获取元素-根据class属性获取
+var cls=document.getElementsByClassName('cls');
+for (let i = 0; i < cls.length; i++) {
+    alert(cls[i]);
+}
+
+//2.查询参考手册，属性，方法
+var divs=document.getElementsByClassName('cls');
+var div1=divs[0];
+div1.innerHTML="程序员GGB";
+
+</script>
+
+</html>

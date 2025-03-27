@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <script>
+        var jsonstr='{"name":"Tom","age":18,"addr":["北京"," 上海","西安"]}';
+        var jsonObject=JSON.parse(jsonstr);
+        alert(jsonObject.name);//Tom
+        alert(JSON.stringify(jsonObject));
+    </script>
+</body>
+</html>
